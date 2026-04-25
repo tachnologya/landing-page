@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Kiwi | The Red Jewel of Nature</title>
+    <meta name="description" content="자연이 선사한 붉은 보석, 루비키위의 압도적인 달콤함을 경험해보세요.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container nav-container">
+            <nav>
+                <a href="#" class="logo">RUBY<span>KIWI</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home" data-t="nav_home">홈페이지</a></li>
+                    <li><a href="#product" data-t="nav_product">제품</a></li>
+                    <li><a href="#about" data-t="nav_story">스토리</a></li>
+                    <li><a href="#contact" data-t="nav_contact">문의</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <button onclick="setLanguage('ko')" id="btn-ko" class="active">KO</button>
+                    <span>|</span>
+                    <button onclick="setLanguage('en')" id="btn-en">EN</button>
+                </div>
+                <div class="mobile-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="hero_cinematic.png" alt="Ruby Kiwi Premium Close-up">
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-t="hero_title">The Ruby<br>Revolution</h1>
+                    <p data-t="hero_desc">자연이 빚은 가장 매혹적인 붉은 보석. <br>20브릭스 이상의 압도적인 당도와 풍부한 안토시아닌이 담긴 프리미엄 루비키위를 만나보세요.</p>
+                    <a href="#order" class="btn-primary" data-t="hero_btn">Experience Now</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll to Explore</span>
+            </div>
+        </section>
+
+        <!-- Story Section (Example of continuation) -->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-t="story_title">Nature's Masterpiece</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="story-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div>
+                        <img src="ruby_kiwi_lifestyle.png" alt="Premium Lifestyle" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow);">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-light);" data-t="story_subtitle">평범함을 거부하는 붉은 진실</h3>
+                        <p style="margin-bottom: 1.5rem; font-size: 1.1rem; opacity: 0.8;" data-t="story_p1">루비키위는 일반 키위와 차원이 다릅니다. 베리류의 풍미와 부드러운 과육, 그리고 털이 없는 매끄러운 껍질까지. 모든 것이 프리미엄을 위해 설계되었습니다.</p>
+                        <p style="opacity: 0.8;" data-t="story_p2">우리는 가장 완벽한 순간에 수확하여 당신의 식탁까지 그 신선함을 그대로 전달합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section -->
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-t="feat_title">Why Ruby Kiwi?</h2>
+                    <div class="divider"></div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem;">
+                    <div style="background: var(--glass); padding: 3rem 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center; transition: var(--transition);" class="feat-card">
+                        <i class="fas fa-candy-cane" style="font-size: 3rem; color: var(--primary-light); margin-bottom: 1.5rem;"></i>
+                        <h3 data-t="feat_1_h" style="margin-bottom: 1rem;">압도적 당도</h3>
+                        <p data-t="feat_1_p" style="opacity: 0.8; font-size: 0.95rem;">20브릭스 이상의 천연 달콤함으로 아이들도 좋아하는 최고의 간식입니다.</p>
+                    </div>
+                    <div style="background: var(--glass); padding: 3rem 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center; transition: var(--transition);" class="feat-card">
+                        <i class="fas fa-shield-virus" style="font-size: 3rem; color: var(--primary-light); margin-bottom: 1.5rem;"></i>
+                        <h3 data-t="feat_2_h" style="margin-bottom: 1rem;">면역력 강화</h3>
+                        <p data-t="feat_2_p" style="opacity: 0.8; font-size: 0.95rem;">비타민 C가 레몬의 3배! 환절기 건강 관리에 이보다 더 좋을 수 없습니다.</p>
+                    </div>
+                    <div style="background: var(--glass); padding: 3rem 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center; transition: var(--transition);" class="feat-card">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: var(--primary-light); margin-bottom: 1.5rem;"></i>
+                        <h3 data-t="feat_3_h" style="margin-bottom: 1rem;">항산화 성분</h3>
+                        <p data-t="feat_3_p" style="opacity: 0.8; font-size: 0.95rem;">붉은 과육에 가득한 안토시아닌이 활성산소를 제거하고 노화를 예방합니다.</p>
+                    </div>
+                    <div style="background: var(--glass); padding: 3rem 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center; transition: var(--transition);" class="feat-card">
+                        <i class="fas fa-utensils" style="font-size: 3rem; color: var(--primary-light); margin-bottom: 1.5rem;"></i>
+                        <h3 data-t="feat_4_h" style="margin-bottom: 1rem;">편리한 섭취</h3>
+                        <p data-t="feat_4_p" style="opacity: 0.8; font-size: 0.95rem;">표면에 털이 없어 흐르는 물에 씻어 껍질째 먹을 수 있어 간편합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-t="prod_title">Our Products</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: var(--glass); padding: 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center;">
+                        <img src="ruby_kiwi_box.png" alt="Premium Gift Box" style="width: 100%; border-radius: 20px; margin-bottom: 1.5rem;">
+                        <h3 data-t="prod_item1_h">프리미엄 선물 세트</h3>
+                        <p style="opacity: 0.8; margin-bottom: 1.5rem;" data-t="prod_item1_p">가장 엄선된 루비키위만을 담은 최고급 선물 세트입니다. (2kg / 3kg)</p>
+                        <span style="font-size: 1.5rem; color: var(--primary-light); font-weight: 700;">₩ 45,000 ~</span>
+                    </div>
+                    <div style="background: var(--glass); padding: 2rem; border-radius: 30px; border: 1px solid var(--glass-border); text-align: center;">
+                        <img src="ruby_kiwi_hero.png" alt="Standard Pack" style="width: 100%; border-radius: 20px; margin-bottom: 1.5rem;">
+                        <h3 data-t="prod_item2_h">데일리 실속 팩</h3>
+                        <p style="opacity: 0.8; margin-bottom: 1.5rem;" data-t="prod_item2_p">가족 모두가 즐길 수 있는 합리적인 구성의 데일리 팩입니다.</p>
+                        <span style="font-size: 1.5rem; color: var(--primary-light); font-weight: 700;">₩ 29,000 ~</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-t="contact_title">Get In Touch</h2>
+                    <div class="divider"></div>
+                </div>
+                <div style="max-width: 600px; margin: 0 auto; background: var(--glass); padding: 4rem; border-radius: 40px; border: 1px solid var(--glass-border); text-align: center;">
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;" data-t="contact_h">구매 및 대량 주문 문의</h3>
+                    <p style="opacity: 0.8; margin-bottom: 2rem;" data-t="contact_p">루비키위의 달콤함을 더 많은 분들과 나누고 싶으신가요? 지금 바로 상담받아보세요.</p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <a href="#" class="btn-primary" style="background: #fee500; color: #3c1e1e;" data-t="contact_btn">카카오톡으로 문의하기</a>
+                        <p style="font-size: 0.9rem; opacity: 0.6;">Tel: 010-1234-5678 | Email: hello@rubykiwi.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Header transparency on scroll
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            if (section.id !== 'home') {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'all 1s ease-out';
+                observer.observe(section);
+            }
+        });
+
+        // Translation Data
+        const translations = {
+            ko: {
+                nav_home: "홈페이지",
+                nav_product: "제품",
+                nav_story: "스토리",
+                nav_contact: "문의",
+                hero_title: "The Ruby<br>Revolution",
+                hero_desc: "자연이 빚은 가장 매혹적인 붉은 보석. <br>20브릭스 이상의 압도적인 당도와 풍부한 안토시아닌이 담긴 프리미엄 루비키위를 만나보세요.",
+                hero_btn: "지금 경험하기",
+                story_title: "Nature's Masterpiece",
+                story_subtitle: "평범함을 거부하는 붉은 진실",
+                story_p1: "루비키위는 일반 키위와 차원이 다릅니다. 베리류의 풍미와 부드러운 과육, 그리고 털이 없는 매끄러운 껍질까지. 모든 것이 프리미엄을 위해 설계되었습니다.",
+                story_p2: "우리는 가장 완벽한 순간에 수확하여 당신의 식탁까지 그 신선함을 그대로 전달합니다.",
+                prod_title: "Our Products",
+                prod_item1_h: "프리미엄 선물 세트",
+                prod_item1_p: "가장 엄선된 루비키위만을 담은 최고급 선물 세트입니다. (2kg / 3kg)",
+                prod_item2_h: "데일리 실속 팩",
+                prod_item2_p: "가족 모두가 즐길 수 있는 합리적인 구성의 데일리 팩입니다.",
+                contact_title: "Get In Touch",
+                contact_h: "구매 및 대량 주문 문의",
+                contact_p: "루비키위의 달콤함을 더 많은 분들과 나누고 싶으신가요? 지금 바로 상담받아보세요.",
+                contact_btn: "카카오톡으로 문의하기",
+                feat_title: "왜 루비키위인가요?",
+                feat_1_h: "압도적 당도",
+                feat_1_p: "20브릭스 이상의 천연 달콤함으로 아이들도 좋아하는 최고의 간식입니다.",
+                feat_2_h: "면역력 강화",
+                feat_2_p: "비타민 C가 레몬의 3배! 환절기 건강 관리에 이보다 더 좋을 수 없습니다.",
+                feat_3_h: "항산화 성분",
+                feat_3_p: "붉은 과육에 가득한 안토시아닌이 활성산소를 제거하고 노화를 예방합니다.",
+                feat_4_h: "편리한 섭취",
+                feat_4_p: "표면에 털이 없어 흐르는 물에 씻어 껍질째 먹을 수 있어 간편합니다."
+            },
+            en: {
+                nav_home: "Home",
+                nav_product: "Product",
+                nav_story: "Story",
+                nav_contact: "Contact",
+                hero_title: "The Ruby<br>Revolution",
+                hero_desc: "The most enchanting red jewel crafted by nature. Experience premium Ruby Kiwi with overwhelming sweetness over 20 Brix and rich anthocyanins.",
+                hero_btn: "Experience Now",
+                story_title: "Nature's Masterpiece",
+                story_subtitle: "The Red Truth Beyond Ordinary",
+                story_p1: "Ruby Kiwi is on a different level. From its berry-like flavor and soft flesh to its smooth, hairless skin—everything is designed for premium quality.",
+                story_p2: "We harvest at the perfect moment to deliver freshness directly to your table.",
+                prod_title: "Our Products",
+                prod_item1_h: "Premium Gift Set",
+                prod_item1_p: "A top-tier gift set containing only the most carefully selected Ruby Kiwis. (2kg / 3kg)",
+                prod_item2_h: "Daily Value Pack",
+                prod_item2_p: "A reasonably priced daily pack that the whole family can enjoy.",
+                contact_title: "Get In Touch",
+                contact_h: "Purchase & Bulk Orders",
+                contact_p: "Want to share the sweetness of Ruby Kiwi with more people? Contact us for a consultation today.",
+                contact_btn: "Contact via KakaoTalk",
+                feat_title: "Why Ruby Kiwi?",
+                feat_1_h: "Extreme Sweetness",
+                feat_1_p: "Natural sweetness over 20 Brix makes it the perfect snack even for children.",
+                feat_2_h: "Immune Boost",
+                feat_2_p: "3x more Vitamin C than lemons! Perfect for health care during seasonal changes.",
+                feat_3_h: "Antioxidant Rich",
+                feat_3_p: "Anthocyanins in the red flesh remove free radicals and help prevent aging.",
+                feat_4_h: "Easy to Enjoy",
+                feat_4_p: "Hairless skin allows you to wash and eat it whole for ultimate convenience."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-t]').forEach(el => {
+                const key = el.getAttribute('data-t');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update active state of buttons
+            document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            
+            // Save preference
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Initialize language
+        const savedLang = localStorage.getItem('preferredLang') || 'ko';
+        setLanguage(savedLang);
+    </script>
+</body>
+</html>
